@@ -1,0 +1,21 @@
+/*==================================================
+# top
+==================================================*/
+.top{
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top_left{
+    padding-left: 10px;
+}
+
+.top_right{
+    padding-right: 10px;
+
+    .icon{
+
+    }
+}

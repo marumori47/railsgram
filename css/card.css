@@ -47,3 +47,10 @@
 .card_content p {
   font-size: 12px;
 }
+.card_content .card_content2 {
+  display: flex;
+}
+.card_content .card_content2 .name {
+  font-weight: 600;
+  margin-right: 10px;
+}

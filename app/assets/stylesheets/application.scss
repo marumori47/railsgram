@@ -1,37 +1,39 @@
 @import "font-awesome";
 @import "common";
 @import "card";
+@import "new";
 
 html {
-    word-spacing: 1px;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
-    height: 100%;
-  }
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  height: 100%;
+}
   
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-    margin: 0;
-  }
-  
-  body {
-    height: 100%;
-    background-color: white;
-    font-size: 1em;
-    color: #000000;
-  }
-  
-  a{
-    text-decoration: none;
-    color: #000000;
-  }
-  
-  .container {
-    padding: 0 16px;
-    width: 100%;
-  }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  background-color: white;
+  font-size: 1em;
+  color: #000000;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.container {
+  padding: 0 16px;
+  padding-bottom: 40px;
+  width: 100%;
+}

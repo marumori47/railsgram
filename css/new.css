@@ -1,0 +1,29 @@
+.new {
+  position: relative;
+  z-index: 10;
+}
+
+.new_top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.new_top .new_cancel {
+  color: #2F80ED;
+}
+.new_top .new_title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.new_post {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.new_submit {
+  font-size: 18px;
+  background: #fff;
+  border: #fff;
+}

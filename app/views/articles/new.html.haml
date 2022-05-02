@@ -1,0 +1,20 @@
+.container
+  = render 'common/top'
+  
+  .new
+    .new_top
+      = link_to root_path do
+        .new_cancel Cancel
+      .new_title Status
+      .new_pos Post
+
+    .new_myaccount
+      .pic.card_detail
+        = image_tag 'photoexample.jpg'
+      .name Jmax_21
+
+    = form_with(model: @article, local: true) do |f|
+      %div 
+        = f.text_field :content, class: 'new_content'
+      %div.new_post
+        = f.submit nil, class: 'new_submit'

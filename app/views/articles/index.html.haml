@@ -1,60 +1,28 @@
 .container
   = render 'common/top'
+  = link_to new_article_path do
+    .post_camera
+      = icon("fa-solid", "camera", class: 'icon_l')
 
-  .card
-    .card_detail
-      = image_tag 'photoexample.jpg'
-      %div
-        %p.name Jmax_21
-        %p.posttime 3 hours ago
-    .card_image
-      = image_tag 'ocean.jpg'
-    .card_hcs
-      .card_heart
-        = icon("fa-regular", "heart", class: 'icon')
-      .card_comment
-        = icon("fa-regular", "comment", class: 'icon')
-      .card_share
-        = icon("fa-solid", "share-nodes", class: 'icon')
-    .card_content
-      %p Jasmine and 12,000 other liked your post
-      %p Jmax_21  Summer holiday :3
-
-  .card
-    .card_detail
-      = image_tag 'photoexample.jpg'
-      %div
-        %p.name Jmax_21
-        %p.posttime 3 hours ago
-    .card_image
-      = image_tag 'ocean.jpg'
-    .card_hcs
-      .card_heart
-        = icon("fa-regular", "heart", class: 'icon')
-      .card_comment
-        = icon("fa-regular", "comment", class: 'icon')
-      .card_share
-        = icon("fa-solid", "share-nodes", class: 'icon')
-    .card_content
-      %p Jasmine and 12,000 other liked your post
-      %p Jmax_21  Summer holiday :3
-      
-  .card
-    .card_detail
-      = image_tag 'photoexample.jpg'
-      %div
-        %p.name Jmax_21
-        %p.posttime 3 hours ago
-    .card_image
-      = image_tag 'ocean.jpg'
-    .card_hcs
-      .card_heart
-        = icon("fa-regular", "heart", class: 'icon')
-      .card_comment
-        = icon("fa-regular", "comment", class: 'icon')
-      .card_share
-        = icon("fa-solid", "share-nodes", class: 'icon')
-    .card_content
-      %p Jasmine and 12,000 other liked your post
-      %p Jmax_21  Summer holiday :3
-    
+  - @articles.each do |article|
+    .card
+      .card_detail
+        = image_tag 'photoexample.jpg'
+        %div
+          %p.name Jmax_21
+          %p.posttime 3 hours ago
+      .card_image
+        = image_tag 'ocean.jpg'
+      .card_hcs
+        .card_heart
+          = icon("fa-regular", "heart", class: 'icon')
+        .card_comment
+          = icon("fa-regular", "comment", class: 'icon')
+        .card_share
+          = icon("fa-solid", "share-nodes", class: 'icon')
+      .card_content
+        %p.card_content1 Jasmine and 12,000 other liked your post
+        .card_content2
+          %p.name Jmax_21
+          %p.content
+            = article.content

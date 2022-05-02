@@ -58,4 +58,13 @@ $avatar-size: 32px;
   p{
     font-size: 12px;
   }
+
+  .card_content2{
+    display: flex;
+
+    .name{
+      font-weight: 600;
+      margin-right: 10px;
+    }
+  }
 }

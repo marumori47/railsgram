@@ -4,6 +4,12 @@
   cursor: pointer;
 }
 
+.card_top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .card_detail {
   padding-top: 12px;
   padding-bottom: 15px;
@@ -20,6 +26,15 @@
 .card_detail .name {
   font-weight: 700;
   margin-bottom: 7px;
+}
+
+.editdelete {
+  margin: auto 0;
+  display: flex;
+}
+
+.edit_link {
+  margin-right: 15px;
 }
 
 .card_image {

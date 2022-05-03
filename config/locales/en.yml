@@ -35,3 +35,8 @@ en:
   helpers:
     submit:
       create: "Post"
+      update: "Post"
+  
+  time:
+    formats:
+      default: "%Y/%m/%d"

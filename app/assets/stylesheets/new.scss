@@ -19,11 +19,34 @@
   }
 }
 
+.new_myaccount{
+  margin-top: 20px;
+  display: flex;
+
+  .pic{
+  }
+
+  .name{
+    margin: auto 0 auto 15px;
+    font-weight: 500;
+  }
+}
+
 .new_post{
   position: absolute;
   top: 0;
   right: 0;
+}
 
+.new_content{
+  margin-top: 15px;
+
+  input{
+    border: none;
+    border-bottom: 1px solid #9E9E9E;
+    width: 100%;
+    font-size: 18px;
+  }
 }
 
 .new_submit{

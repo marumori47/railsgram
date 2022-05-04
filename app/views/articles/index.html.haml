@@ -21,10 +21,11 @@
           .card_detail
             = image_tag 'photoexample.jpg'
             %div
-              %p.name Jmax_21
+              %p.name
+                = article.user.name
               %p.posttime 
                 = I18n.l(article.created_at, format: :default)
-          - if user_signed_in?
+          - if user_signed_in? && current_user.articles.exists?(id: article.id)
             .editdelete
               .edit_link
                 = link_to edit_article_path(article) do
@@ -44,6 +45,7 @@
         .card_content
           %p.card_content1 Jasmine and 12,000 other liked your post
           .card_content2
-            %p.name Jmax_21
+            %p.name
+              = article.user.name
             %p.content
               = article.content

@@ -69,3 +69,12 @@
   font-weight: 600;
   margin-right: 10px;
 }
+
+.top_fixed2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.top_fixed2 .profile_user {
+  width: 20px;
+}

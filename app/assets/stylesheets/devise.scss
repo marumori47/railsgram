@@ -1,0 +1,60 @@
+.devise_title{
+  font-size: 14px;
+  color: #979797;
+}
+
+.devise_text{
+  border: none;
+  border-bottom: 1px solid #9E9E9E;
+  width: 100%;
+  font-size: 18px;
+  margin: 5px 0 10px;
+}
+
+.devise_top_fixed{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.devise_img{
+  position: relative;
+  margin-bottom: 20px;
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.devise_details{
+  font-size: 12px;
+
+  a{
+    color: #ccc;
+  }
+}
+
+.devise_top{
+  position: relative;
+}
+
+.devise_btn{
+  margin-top: 75px;
+
+  background: #000;
+  border: none;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 16px 0;
+  font-weight: bold;
+
+  position: absolute;
+  top: 470px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  // padding: 0 16px;
+}

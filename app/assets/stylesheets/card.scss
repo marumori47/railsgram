@@ -11,7 +11,8 @@ $avatar-size: 32px;
 .card_top{
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;}
+  flex-wrap: wrap;
+}
 
 .card_detail {
   padding-top: 12px;
@@ -79,5 +80,15 @@ $avatar-size: 32px;
       font-weight: 600;
       margin-right: 10px;
     }
+  }
+}
+
+.top_fixed2{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .profile_user{
+    width: 20px;
   }
 }

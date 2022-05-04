@@ -1,9 +1,18 @@
 .container
-  .top_fixed
+  .top_fixed1
     = render 'common/top'
+  .top_fixed2
     = link_to new_article_path do
       .post_camera
         = icon("fa-solid", "camera", class: 'icon_l')
+    - if user_signed_in?
+      .profile_user
+        = icon("fa-regular", "user", class: 'icon_l')
+    - else
+      .login
+        = link_to new_user_session_path do
+          .loginbtn
+            = icon("fa-regular", "user", class: 'icon_l')
 
   .position_fix1
     - @articles.each do |article|
@@ -15,13 +24,14 @@
               %p.name Jmax_21
               %p.posttime 
                 = I18n.l(article.created_at, format: :default)
-          .editdelete
-            .edit_link
-              = link_to edit_article_path(article) do
-                = icon("fa-regular", "pen-to-square", class: 'icon_l')
-            .delete_link
-              = link_to article_path(article), data:{ method: 'delete', confirm: 'Are you sure you want to delete？'} do
-                = icon("fa-solid", "trash-can", class: 'icon_l')
+          - if user_signed_in?
+            .editdelete
+              .edit_link
+                = link_to edit_article_path(article) do
+                  = icon("fa-regular", "pen-to-square", class: 'icon_l')
+              .delete_link
+                = link_to article_path(article), data:{ method: 'delete', confirm: 'Are you sure you want to delete？'} do
+                  = icon("fa-solid", "trash-can", class: 'icon_l')
         .card_image
           = image_tag 'ocean.jpg'
         .card_hcs

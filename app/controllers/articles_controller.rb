@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
 	before_action :set_article, only: [:edit, :update]
+	before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
 
 	# 投稿一覧画面
 	def index

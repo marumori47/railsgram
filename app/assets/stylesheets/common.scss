@@ -21,6 +21,29 @@
 }
 
 /*==================================================
+# topwhite
+==================================================*/
+.topwhite{
+    color: #fff;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.topwhite_left{
+    padding-left: 10px;
+}
+
+.topwhite_right{
+    padding-right: 10px;
+
+    .icon{
+
+    }
+}
+
+/*==================================================
 # index.html.haml
 ==================================================*/
 .post_camera{
@@ -28,3 +51,9 @@
         font-size: 20px;
     }
 }
+.profile_user{
+    .icon_l{
+        font-size: 20px;
+    }
+}
+
